@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit");
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root {
+    --bg-color: white;
+    --primary-accent: #8080D7;
+    --secondary-accent: #AAD9D9;
+    --accent-color: #171753;
+
+    --font-secondary: "Outfit", sans-serif;
+
+    --size-h1:4.25rem; /*68px*/	
+    --size-h2:3rem; /*48px*/
+    --size-h3:1.75rem; /*28px*/
+    --size-testimonial:1.5rem; /*24px*/
+    --size-menu:1.25rem; /*20px*/
+}
+
+main {
+    width: 61.8vw;
+    max-width: 1440;
+    margin: 0 auto; 
+    max-width: 100%;
+    overflow-x: hidden;
+    
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+    font-family: "Outfit", sans-serif;
+    text-transform: capitalize;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+header {
+    display: flex;
+    align-items: flex-start;
+    line-height: 4rem;
+    font-size: var(--size-menu);
+    
+}
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    flex-basis: 33.33%;
+    gap: 30px;
+}
+
+.menu-item {
+    text-align: right;
+    text-transform: lowercase;
+    white-space: nowrap;
+}
+.logo {
+    margin-right: auto;
+    font-weight: 800;
+    font-size: var(--size-h3);
+}
+
+
+
+
+
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+.contact-info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contact-info p {
+    margin: 0 10px;
+}
+section {
+    margin-bottom: 30px;
+}
+
+.resume-area {
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+.highlight {
+    border-color: var(--primary-accent);
+}
+
+h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.flex-item {
+    flex: 1 1 300px;
+}
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+.skill-category {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+}
+.skill-category h3 {
+    margin-bottom: 10px;
+}
+ul {
+    list-style-type: none;
+}
+.work-experience, .volunteer-experience {
+    margin-bottom: 20px;
+}
+.work-experience h3, .volunteer-experience h3 {
+    margin-bottom: 5px;
+}
+.work-experience p, .volunteer-experience p {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;
+    }
+    .contact-info {
+        flex-direction: column;
+    }
+    .contact-info p {
+        margin: 5px 0;
+    }
+}

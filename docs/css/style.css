@@ -115,9 +115,12 @@ section {
 
 /* highlight start - this separates my resume into linkable sections :) */
 .highlight {
-    border: 2px solid white;
-    border-radius: 10px;
+    border: 0.2rem solid white;
+    border-radius: 0.5rem;
     transition: border-color 0.5s ease;
+    padding: 0.75rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
 }
 
 .highlight-active {

@@ -94,13 +94,36 @@ section {
     margin-bottom: 30px;
 }
 
-.resume-area {
-    border: 2px solid transparent;
-    transition: border-color 0.3s ease;
+
+@keyframes target-area {
+    0% {
+        background: white;
+    }
+    25% {
+        background: var(--primary-accent);
+    }
+    50% {
+        background: var(--primary-accent);
+    }
+    75% {
+        background: var(--primary-accent);
+    }
+    100% {
+        background: white;
+    }
 }
+
+/* highlight start - this separates my resume into linkable sections :) */
 .highlight {
+    border: 2px solid white;
+    border-radius: 10px;
+    transition: border-color 0.5s ease;
+}
+
+.highlight-active {
     border-color: var(--primary-accent);
 }
+/* highlight end */
 
 h2 {
     border-bottom: 2px solid #333;

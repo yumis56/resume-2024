@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit");
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root {
+    --bg-color: white;
+    --primary-accent: #8080D7;
+    --secondary-accent: #AAD9D9;
+    --accent-color: #171753;
+
+    --font-secondary: "Outfit", sans-serif;
+
+    --size-h1:4.25rem; /*68px*/	
+    --size-h2:3rem; /*48px*/
+    --size-h3:1.75rem; /*28px*/
+    --size-testimonial:1.5rem; /*24px*/
+    --size-menu:1.25rem; /*20px*/
+}
+
+main {
+    width: 61.8vw;
+    max-width: 1440;
+    margin: 0 auto; 
+    max-width: 100%;
+    overflow-x: hidden;
+    
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+li {
+    font-family: "Outfit", sans-serif;
+    text-transform: capitalize;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.flex-tiem li {
+    list-style-type: circle;
+}
+
+header {
+    display: flex;
+    align-items: flex-start;
+    line-height: 4rem;
+    font-size: var(--size-menu);
+    margin-bottom: 1.618rem;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    flex-basis: 33.33%;
+    gap: 30px;
+}
+
+.menu-item {
+    text-align: right;
+    text-transform: lowercase;
+    white-space: nowrap;
+}
+.logo {
+    margin-right: auto;
+    font-weight: 800;
+    font-size: var(--size-h3);
+}
+
+
+
+
+
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+.contact-info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contact-info p {
+    margin: 0 10px;
+}
+section {
+    margin-bottom: 30px;
+}
+
+/*
+i{
+    margin-right: 2px;
+}
+*/
+
+
+/* hero start */
+.hero {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 0 auto;
+    gap: 20px;
+    background-color: #eeeeee;
+    margin-bottom: 1.618rem;
+}
+
+
+.hero-image {
+    flex: 1;
+    width: auto;
+    height: 16rem;
+    background: url(../images/ysong.jpg);
+    background-size: auto 16rem;
+    background-repeat: no-repeat;
+}
+
+.hero h2 {
+    border-bottom: none;
+    padding-bottom: 0.1rem;
+    margin-bottom: 0.1rem;
+    padding-left: 0.75rem;
+}
+
+.hero h3 {
+    margin-bottom: 0.375rem;
+    padding-left: 0.75rem;
+}
+
+.hero-text {
+    flex: 1;    
+    align-self: center;
+}
+
+
+.hero-contact {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+
+    border: 0.3rem solid transparent;
+    border-radius: 0.5rem;
+    transition: border-color 0.5s ease;
+    padding-top: 0.75rem;
+    padding-bottom: 0.2rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+}
+.hero-contact a {
+    text-transform: none;
+}
+
+.fa-contact-icon {
+    height: 1.8rem;
+    text-align: center;
+    margin-right: 0.75rem;
+}
+
+/* hero end */
+
+
+/* highlight start - this separates my resume into linkable sections :) */
+.highlight {
+    border: 0.2rem solid white;
+    border-radius: 0.5rem;
+    transition: border-color 0.5s ease;
+    padding: 0.75rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+
+.highlight-active {
+    border-color: var(--primary-accent);
+}
+/* highlight end */
+
+h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex-direction: column;
+    padding: 1rem;
+}
+.flex-item {
+    flex: 1 1 1rem;
+}
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+.skill-category {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.skills-grid ul{
+    list-style-type: none;
+    padding-inline-start: 1.5rem;
+}
+.skills-grid li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.1rem;
+}
+
+.fa-skill-icon {
+    width: 15.875px; 
+    text-align: center;
+    margin-right: 10px;
+}
+/*
+NOTE
+the microsoft icon refuses to change width from 15.875px, which is why everything is set to that. unsure why!
+*/
+
+
+
+.skill-category h3 {
+    margin-bottom: 10px;
+}
+.work-experience, .volunteer-experience {
+    margin-bottom: 20px;
+}
+.work-experience h3, .volunteer-experience h3 {
+    margin-bottom: 5px;
+}
+.work-experience p, .volunteer-experience p {
+    margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;
+    }
+    .contact-info {
+        flex-direction: column;
+    }
+    .contact-info p {
+        margin: 5px 0;
+    }
+}

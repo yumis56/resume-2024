@@ -7,6 +7,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
         if (targetElement) {
             targetElement.scrollIntoView({
+                block: 'center',
                 behavior: 'smooth'
             });
       
